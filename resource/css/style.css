@@ -1,0 +1,45 @@
+/*reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,figure,figcaption{padding: 0;margin: 0;}
+h1,h2,h3,h4,h5,h6 {font-weight: normal;}
+ul, ol{list-style: none;}
+img{border:none;vertical-align: middle;}
+a{cursor:pointer;text-decoration: none;}
+table{border-collapse: collapse;border-spacing:0;}
+i{font-style:none;}
+/*form*/
+input, button, option, textarea, select, fieldset{outline: none;vertical-align: middle;}
+input[type="text"],input[type="password"]{padding-left:5px;font-family: "Microsoft YaHei"}
+input[type="button"]{font-family: "Microsoft YaHei";cursor:pointer;}
+input::-ms-clear{display:none;}
+input[type="password"]::-ms-reveal{display:none;}
+button{cursor: pointer;}
+/*清除浮动*/
+.clearfix:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.clearfix{*zoom: 1;}
+.clear{clear:both;}
+/*内容溢出*/
+.ellipsis{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+/*常用样式*/
+.ib{display:inline-block;*display: inline;zoom:1;}
+.posr{position:relative;}
+.posa{position:absolute;}
+.block{display: block;}
+.fl{float:left;}
+.fr{float:right;}
+.tc{text-align: center;}
+.tr{text-align:right;}
+.hide{display: none;}
+.mt40{margin-top:40px;}
+.mt30{margin-top:30px;}
+.mt20{margin-top:20px;}
+.mt10{margin-top:10px;}
+.mb10{margin-bottom: 10px;}
+.mb15{margin-bottom: 15px;}
+.mr20{margin-right:20px;}
+.ml100{margin-left: 100px;}
+.ml10{margin-left:10px;}
+.ml25{margin-left: 25px;}
+.c9{color:#999;}
+.c6{color:#666;}
+.level{margin-left:100px;}
+

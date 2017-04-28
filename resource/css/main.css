@@ -1,0 +1,21 @@
+body{color:#333; font:18px Arial,"\5FAE\8F6F\96C5\9ED1"; *font-family: "Microsoft YaHei";}
+#container{width:100%;border:2px solid #e3e4e5;border-bottom: none;}
+#leftSider{width:245px;border-right:2px solid #e3e4e5;position: absolute;left: 0;bottom: 0;top: 0;z-index:90;}
+#rightCon{float:left;padding:30px 30px 0;    width: 100%;padding-left: 278px;box-sizing: border-box;position: absolute;}
+.list{padding:10px 0px 20px;border-bottom: 1px solid #e3e4e5}
+.list a{color:#333;font-size:16px;display: block;height: 35px;line-height: 35px;text-align: center;}
+.list a:hover,.active a{background:lightgray;color:#fff;}
+.list span{margin-left: 63px;}
+.wrap{border:1px solid #e3e4e5;}
+.h2-top{background:#dedede; line-height: 45px;font-size: 14px;padding-left: 15px;border:1px solid #e3e4e5;}
+.person{padding:20px;border-bottom: 1px solid #e3e4e5;margin:0 20px;}
+.last{border-bottom: none;}
+.person p{line-height: 35px;}
+.person .edit-a{float: right;color: dodgerblue;}
+.btn-p{width:85px;height:30px;line-height: 30px;    color: #fff;background: #2a8cd7;text-align: center;border-radius: 7px;cursor:pointer;}
+.list:nth-child(1) span:before{content:url(../images/icon_home.png);margin-right: 10px;vertical-align: middle;}
+.list:nth-child(2) span:before{content:url(../images/icon_me.png);margin-right: 10px;vertical-align: middle;}
+.list:nth-child(3) span:before{content:url(../images/rightJian.png);margin-right: 10px;vertical-align: middle;}
+.list:nth-child(4) span:before{content:url(../images/rightJian.png);margin-right: 10px;vertical-align: bottom;}
+.edit:before{content:url(../images/rightJian.png);margin-right: 10px;vertical-align: middle;}
+.edit:before{content:url(../images/rightJian.png);margin-right: 10px;vertical-align: bottom;}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>H5内部评价表</title>
+	<link rel="stylesheet" href="resource/css/style.css">
+	<link rel="stylesheet" href="resource/css/main.css">
+
+</head>
+<body>
+	<div id="container" class="clearfix">
+        <div id="leftSider" class="fl clearfix">
+           <div class="list mt20">
+              <span class="c9">首页</span>
+              <ul class="mt10">
+                <li id="entryMain"><a href="javascript:void(0);" @click="systemMain">系统主页</a></li>
+              </ul>
+           </div>
+           <div class="list">
+              <span class="c9">个人信息</span>
+              <ul class="mt10">
+                <li id="myPage">
+                    <a href="javascript:void(0);" @click="myPage">我的主页</a>
+                </li>
+                <!--<li><a href="javascript:void(0);">起草合同</a></li>-->
+              </ul>
+           </div>
+           <!--<div class="list">-->
+              <!--<span class="c9">客户</span>-->
+              <!--<ul class="mt10">-->
+                <!--<li><a href="javascript:void(0);">我的客户</a></li>-->
+              <!--</ul>-->
+           <!--</div>-->
+           <!--<div class="list last">-->
+              <!--<span class="c9">客户</span>-->
+              <!--<ul class="mt10">-->
+                <!--<li class="active"><a href="javascript:void(0);">我的资料</a></li>-->
+                <!--<li><a href="javascript:void(0);">我的消息</a></li>-->
+              <!--</ul>-->
+           <!--</div>-->
+        </div>
+        <div id="rightCon">
+          <h2 class="h2-top">分数详情</h2>
+          <div class="wrap">
+		          <div class="person clearfix">
+		              <!--<div class="fl">-->
+		                <!--<a href="javascript:void(0)" class="fl"><img src="resource/images/headPortrait.jpg" /></a>-->
+		                <!--<p class="fl ml10"><span class="block mt20">张三</span>-->
+		                <!--<span class="btn-p block">修改头像</span></p>-->
+		              <!--</div>-->
+		              <!--<div class="fl ml100">-->
+		                 <!--<p>绑定手机：123123123</p>-->
+		                 <!--<p>所在律所：环球律所事务所</p>-->
+		                 <!--<p>职位：合伙人</p>-->
+		              <!--</div>-->
+		          </div>
+		          <!--<div class="person">-->
+                    <!--&lt;!&ndash;<p class="edit">修改个人信息</p>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<p class="ml25"><span class="ellipsis c9">互联网账号村啊在账号账号账号村啊在账号账号账号村啊在账号账号账号村啊在账号账号账号村啊在账号账号账号村啊在账号账号账号村啊在账号账号账号村啊在账号账号账号胡两位<span><a href="javascript:void(0);" class="edit-a">修改</a></p>&ndash;&gt;-->
+		          <!--</div>-->
+		          <!--<div class="person">-->
+                    <!--&lt;!&ndash;<p class="edit">修改个人信息</p>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<p class="ml25"><span class="ellipsis c9">互联网账号村啊在账号账号账号胡两位<span><a href="javascript:void(0);" class="edit-a">修改</a></p>&ndash;&gt;-->
+		          <!--</div>-->
+		  </div>
+          <h2 class="h2-top">分数规则</h2>
+          <div class="wrap">
+            <div class="person clearfix">
+                <!--<div class="fl">-->
+                <!--<a href="javascript:void(0)" class="fl"><img src="resource/images/headPortrait.jpg" /></a>-->
+                <!--<p class="fl ml10"><span class="block mt20">张三</span>-->
+                <!--<span class="btn-p block">修改头像</span></p>-->
+                <!--</div>-->
+                <!--<div class="fl ml100">-->
+                <!--<p>绑定手机：123123123</p>-->
+                <!--<p>所在律所：环球律所事务所</p>-->
+                <!--<p>职位：合伙人</p>-->
+                <!--</div>-->
+                分数由基础分和表现分相加而得
+                项目总分值为项目预估人日数 x 100，然后由参与项目的所有人按照所负责的任务多寡进行分配，分配规则为：
+                <ul class="level">
+                    <li>1. 每人负责的模块人日数之和与项目总人日数之比为该组员在此项目中的权重值</li>
+                    <li>2. 项目分数计算完毕后，项目组长和项目技术顾问各额外获得项目总分值10%的分数作为奖励（如果项目组长和技术顾问是同一个人则此人会额外获得20%的奖励）</li>
+                    <li>3. 项目组长的职责是进度把控；项目技术顾问的职责是进行技术把控和技术风险预警</li>
+                    <li>4. 在项目中负责了预估人日数之外的，但是对全组开发有益的工作（比如把所有消息配置工作都包了），酌情增加其权重值</li>
+                    <li>5. 项目上线的下一个工作日为结算日，公布得分值，并且把分数加到个人头上</li>
+                </ul>
+                分数根据各人表现情况会不停上下浮动，当有奖金的分配时会按照该分数作为权重值分发
+                评选优秀员工和晋升加薪时也会以该值排序，择优选择。
+                点击人名会显示加减分详情
+            </div>
+            <div class="person">
+                <p class="edit">职级与加减分系数关系表如下：</p>
+                <p class="ml25"><span class="ellipsis c9">
+                    <ul class="level">
+                        <li>T1.1：加分系数2.0，减分系数0.2</li>
+                        <li>T1.2：加分系数1.5，减分系数0.5</li>
+                        <li>T2.1：加分系数1.0，减分系数1.0</li>
+                        <li>T2.2：加分系数0.8，减分系数1.2</li>
+                        <li>T2.3：加分系数0.5，减分系数1.5</li>
+                        <li>T3.1：加分系数0.2，减分系数2.0</li>
+                    </ul>
+                    <span><a href="javascript:void(0);" class="edit-a">修改</a></p>
+            </div>
+
+            <div class="person">
+                <p class="edit">加分项目如下(不断更新，后续连上数据库之后再处理)</p>
+                <p class="ml25"><span class="ellipsis c9">
+                    <ul class="level">
+                        <li>1. 学习1个新算法：+20</li>
+                        <li>2. 学习1个新设计模式：+40</li>
+                        <li>3. 探索现有框架：+30</li>
+                        <li>4. 对某个技术领域或者技术的坑整理成WIKI文档：+50</li>
+                        <li>5. 进行全组范围技术分享：+100</li>
+                        <li>6. 开技术分享会（至少30分钟、3名听众）：+200</li>
+                        <li>7. 应用最优算法解决了工作中的实际问题：+150</li>
+                        <li>8. 在工作中应用了合适的设计模式让程序更优雅：+300</li>
+                        <li>9. 为现有工作流程提出建设性意见并被采纳：+200</li>
+                        <li>10. 积极主动解决难题或者本不属于自身责任的问题：+100</li>
+                    </ul>
+                    <span><a href="javascript:void(0);" class="edit-a">修改</a>
+                </p>
+            </div>
+            <div class="person">
+               <p class="edit">减分项目如下(不断更新，后续连上数据库之后再处理)</p>
+               <p class="ml25"><span class="ellipsis c9">
+                   <ul class="level">
+                       <li>1. 因个人原因造成线上严重事故：-300</li>
+                       <li>2. 因个人原因造成线上事故：-100</li>
+                       <li>3. 不负责任的说法与做法：-200</li>
+                       <li>4. 拒绝进步：-50</li>
+                       <li>5. 所写代码质量严重低于所属技术职级：-50</li>
+                       <li>6. 不参与集体活动：-20</li>
+                       <li>7. 因无法熟练使用常用工具，影响他人工作，多次批评无果：-200</li>
+                   </ul>
+                   <span><a href="javascript:void(0);" class="edit-a">修改</a>
+               </p>
+            </div>
+        </div>
+
+        </div>
+	</div>
+</body>
+<script src="libs/vue.min.js"></script>
+<script src="dist/build.js"></script>
+</html>
