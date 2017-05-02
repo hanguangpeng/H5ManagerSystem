@@ -1,8 +1,20 @@
 /**
  * Created by 韩旭森 on 2017/4/27.
  */
+import Vue from 'vue';
+import VueRouter from 'vue-router'
+Vue.use(VueRouter);
 
 (function(){
+
+    const routes = [
+        {path:'/myPage'}
+    ];
+
+    const router = new VueRouter({
+        routes
+    });
+
     let vm = new Vue({
         el:"#container",
         data:{
@@ -15,17 +27,8 @@
             myPage: function () {
                 alert("我的主页")
             }
-        }
-    });
-
-
-
-    let aaa = "asdfasfsd";
-
-    var bbb = (aa)=>{
-        console.log("test");
-    };
-    bbb();
-    console.log("sdfassfsd");
+        },
+        router
+    }).$mount('#container');
 
 })();

@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>H5内部评价表</title>
+	<title>test</title>
 	<link rel="stylesheet" href="resource/css/style.css">
 	<link rel="stylesheet" href="resource/css/main.css">
-
 </head>
 <body>
 	<div id="container" class="clearfix">
@@ -13,69 +12,34 @@
            <div class="list mt20">
               <span class="c9">首页</span>
               <ul class="mt10">
-                <li id="entryMain"><a href="javascript:void(0);" @click="systemMain">系统主页</a></li>
+                <li id="entryMain">
+                    <!--<a href="javascript:void(0);" @click="systemMain">系统主页</a>-->
+                    <router-link to="/mainPage">系统主页</router-link>
+                </li>
               </ul>
            </div>
            <div class="list">
               <span class="c9">个人信息</span>
               <ul class="mt10">
                 <li id="myPage">
-                    <a href="javascript:void(0);" @click="myPage">我的主页</a>
+                    <!--<a href="javascript:void(0);" @click="myPage">测试的主页</a>-->
+                    <router-link to="/myPage">我的主页</router-link>
                 </li>
-                <!--<li><a href="javascript:void(0);">起草合同</a></li>-->
               </ul>
+              <router-view></router-view>
            </div>
-           <!--<div class="list">-->
-              <!--<span class="c9">客户</span>-->
-              <!--<ul class="mt10">-->
-                <!--<li><a href="javascript:void(0);">我的客户</a></li>-->
-              <!--</ul>-->
-           <!--</div>-->
-           <!--<div class="list last">-->
-              <!--<span class="c9">客户</span>-->
-              <!--<ul class="mt10">-->
-                <!--<li class="active"><a href="javascript:void(0);">我的资料</a></li>-->
-                <!--<li><a href="javascript:void(0);">我的消息</a></li>-->
-              <!--</ul>-->
-           <!--</div>-->
         </div>
         <div id="rightCon">
           <h2 class="h2-top">分数详情</h2>
           <div class="wrap">
 		          <div class="person clearfix">
-		              <!--<div class="fl">-->
-		                <!--<a href="javascript:void(0)" class="fl"><img src="resource/images/headPortrait.jpg" /></a>-->
-		                <!--<p class="fl ml10"><span class="block mt20">张三</span>-->
-		                <!--<span class="btn-p block">修改头像</span></p>-->
-		              <!--</div>-->
-		              <!--<div class="fl ml100">-->
-		                 <!--<p>绑定手机：123123123</p>-->
-		                 <!--<p>所在律所：环球律所事务所</p>-->
-		                 <!--<p>职位：合伙人</p>-->
-		              <!--</div>-->
+
 		          </div>
-		          <!--<div class="person">-->
-                    <!--&lt;!&ndash;<p class="edit">修改个人信息</p>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<p class="ml25"><span class="ellipsis c9">互联网账号村啊在账号账号账号村啊在账号账号账号村啊在账号账号账号村啊在账号账号账号村啊在账号账号账号村啊在账号账号账号村啊在账号账号账号村啊在账号账号账号胡两位<span><a href="javascript:void(0);" class="edit-a">修改</a></p>&ndash;&gt;-->
-		          <!--</div>-->
-		          <!--<div class="person">-->
-                    <!--&lt;!&ndash;<p class="edit">修改个人信息</p>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<p class="ml25"><span class="ellipsis c9">互联网账号村啊在账号账号账号胡两位<span><a href="javascript:void(0);" class="edit-a">修改</a></p>&ndash;&gt;-->
-		          <!--</div>-->
+
 		  </div>
           <h2 class="h2-top">分数规则</h2>
           <div class="wrap">
             <div class="person clearfix">
-                <!--<div class="fl">-->
-                <!--<a href="javascript:void(0)" class="fl"><img src="resource/images/headPortrait.jpg" /></a>-->
-                <!--<p class="fl ml10"><span class="block mt20">张三</span>-->
-                <!--<span class="btn-p block">修改头像</span></p>-->
-                <!--</div>-->
-                <!--<div class="fl ml100">-->
-                <!--<p>绑定手机：123123123</p>-->
-                <!--<p>所在律所：环球律所事务所</p>-->
-                <!--<p>职位：合伙人</p>-->
-                <!--</div>-->
                 分数由基础分和表现分相加而得
                 项目总分值为项目预估人日数 x 100，然后由参与项目的所有人按照所负责的任务多寡进行分配，分配规则为：
                 <ul class="level">
@@ -141,6 +105,7 @@
         </div>
 	</div>
 </body>
-<script src="libs/vue.min.js"></script>
-<script src="dist/build.js"></script>
+<!--<script src="./libs/vue.js"></script>-->
+<!--<script src="./libs/vue-router.js"></script>-->
+<script src="./dist/build.js"></script>
 </html>
